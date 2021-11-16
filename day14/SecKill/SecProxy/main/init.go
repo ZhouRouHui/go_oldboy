@@ -3,7 +3,8 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"go_dev/day14/SecKill/SecProxy/service"
+	"github.com/garyburd/redigo/redis"
+	"oldboy/day14/SecKill/SecProxy/service"
 	"time"
 
 	"golang.org/x/net/context"
@@ -11,7 +12,6 @@ import (
 	"github.com/astaxie/beego/logs"
 	etcd_client "github.com/coreos/etcd/clientv3"
 	"github.com/coreos/etcd/mvcc/mvccpb"
-	"github.com/garyburd/redigo/redis"
 )
 
 var (
